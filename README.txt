@@ -55,7 +55,8 @@ selecione a opção "4".
 
 OBSERVAÇÕES IMPORTANTES:
 O programa possui um limite de 99 ingressos vendidos. Após atingir 
-esse limite, não será possível vender novos ingressos. Além disso, 
+esse limite, não será possível vender novos ingressos. Todavia, 
+podemos fazer alterações ilimitadas na diretiva TAM. Além disso, 
 caso as acentuações, ou outros carecteres especiais, não aparecerem 
 corretamente em seu VS Code, você precisará alterar a codificação 
 padrão para "windows 1252" na opção Encoding. 

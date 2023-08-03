@@ -87,7 +87,6 @@ void validar_ingresso(struct dados_cliente venda[]){
 	printf("Digite o CPF para validação: ");
 	read_text(convert, 15);
 	format_cpf(convert, validar);
-	
 	system("cls");
 	
 	for(int i = 0; i <= TAM; i++){
@@ -141,7 +140,7 @@ int main(){
 				system("pause");
 				break;
 			default: 
-				printf("======= OPÇÃO INVÁLIDA =======\n\n");
+				printf("======= OPÇÃO INVÝLIDA =======\n\n");
 				system("pause");
 				break;
 		}
