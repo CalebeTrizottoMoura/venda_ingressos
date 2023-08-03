@@ -6,12 +6,12 @@
 #define TAM 99
 
 void clean_buffer(){
-    int c;
-    while((c = getchar()) != '\n' && c != EOF){}
+	int c;
+    	while((c = getchar()) != '\n' && c != EOF){}
 }
 
 void read_text(char *name, int size){
-    fgets(name, size, stdin);
+   	fgets(name, size, stdin);
 	strtok(name, "\n");
 }
 
@@ -41,14 +41,14 @@ void vender_ingresso(int *codigo, struct dados_cliente venda[]){
 
 		for(int i = 0; i < TAM; i++){
 			if(strcmp(new_cpf, venda[i].cpf) == 0){
-				printf("Um ingresso já foi vendido para esse CPF.\n");
-				printf("Por favor, digite outro CPF válido.\n");
+				printf("Um ingresso jÃ¡ foi vendido para esse CPF.\n");
+				printf("Por favor, digite outro CPF vÃ¡lido.\n");
 				cont++;
 			}
 		}
 
 		if(strlen(new_cpf) != 14){
-			printf("Por favor, digite um CPF com 11 dígitos.\n");
+			printf("Por favor, digite um CPF com 11 dÃ­gitos.\n");
 			cont++;
 		}
 	}while(cont != 0);
@@ -83,8 +83,8 @@ void validar_ingresso(struct dados_cliente venda[]){
 	char validar[15], convert[15];
 	int controle;
 	
-	printf("====== VALIDAÇÃO DE INGRESSOS ======\n");
-	printf("Digite o CPF para validação: ");
+	printf("====== VALIDAÃ‡ÃƒO DE INGRESSOS ======\n");
+	printf("Digite o CPF para validaÃ§Ã£o: ");
 	read_text(convert, 15);
 	format_cpf(convert, validar);
 	
@@ -102,7 +102,7 @@ void validar_ingresso(struct dados_cliente venda[]){
 	}
 	
 	if(controle != 1){
-		printf("==== INGRESSO NÃO VALIDADO ====\n\n");
+		printf("==== INGRESSO NÃƒO VALIDADO ====\n\n");
 	}
 		
 	system("pause");
@@ -120,7 +120,7 @@ int main(){
 		printf("2 - Listar ingressos vendidos.\n");
 		printf("3 - Validar ingresso.\n");
 		printf("4 - Sair.\n");
-		printf("\nDigite a opção desejada: ");
+		printf("\nDigite a opÃ§Ã£o desejada: ");
 		scanf("%d", &x);
 		clean_buffer();
 		system("cls");
@@ -141,7 +141,7 @@ int main(){
 				system("pause");
 				break;
 			default: 
-				printf("======= OPÇÃO INVÁLIDA =======\n\n");
+				printf("======= OPÃ‡ÃƒO INVÃLIDA =======\n\n");
 				system("pause");
 				break;
 		}
